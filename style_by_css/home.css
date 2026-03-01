@@ -1,0 +1,121 @@
+/* ===============================
+   HOME HERO SECTION
+=================================*/
+.home-hero-section{
+    padding: 60px 20px;
+    background: transparent;
+    min-height: 80vh;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.06);
+}
+
+.home-hero-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* ===============================
+   LEFT SIDE CONTENT
+=================================*/
+.home-hero-content{
+    flex: 1;
+}
+
+.home-hero-title{
+    font-size: 3rem;
+    color: #303153;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.home-hero-text{
+    font-size: 1.2rem;
+    color: #303153;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* ===============================
+   BUTTON
+=================================*/
+.home-hero-btn{
+    background-color: #ffffff;
+    color: #303153;
+    border: 2px solid #303153;
+    padding: 12px 20px 12px 10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.home-hero-btn:hover{
+    background-color: #303153;
+    color: white;
+}
+
+.arrow i {
+    display: inline-block;
+    transform: rotate(-90deg);
+    font-size: 20px;
+    transition: transform 0.5s ease;
+}
+
+.home-hero-btn:hover .arrow i {
+    transform: rotate(-90deg) translateY(8px);
+}
+
+/* ===============================
+   RIGHT SIDE IMAGE
+=================================*/
+.home-hero-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image-card{
+    background: linear-gradient(145deg, #dff5f7, #fff5f9);
+    padding:10px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0px 0px 30px rgba(171, 132, 146, 0.772);
+    transition: all 0.3s ease;
+}
+
+.home-image-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 60px rgba(255, 200, 220, 0.5);
+}
+
+.home-hero-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+=================================*/
+@media (max-width: 991px){
+    .home-hero-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-hero-title{
+        font-size: 2rem;
+    }
+
+    .home-hero-image{
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,135 @@
+/* ===============================
+   COURSES SECTION
+=================================*/
+
+.courses-wrapper{
+    padding: 80px 20px;
+     box-shadow: 0px 2px 15px rgba(0,0,0,0.06);
+}
+
+.courses-container{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.courses-main-title{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #303153;
+    margin-bottom: 50px;
+}
+
+/* Grid Layout */
+.courses-card-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Card */
+.course-card{
+    background: white;
+    padding: 40px 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.06);
+}
+
+/* Hover Effect */
+.course-card:hover{
+    border: 1px solid #303153;
+    /* transform: translateY(-10px); */
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.12);
+}
+
+/* Logo */
+.course-logo-wrapper{
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #dff5f7, #fff5f9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #303153;
+}
+
+.course-logo{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* Title */
+.course-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #303153;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.course-subtitle{
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+/* ===============================
+   BUTTON
+=================================*/
+.course-hero-btn{
+    background-color: #303153;
+    color: #ffffff;
+    padding: 7px 25px 7px 10px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.blue{
+    background-color: #1895b7;
+    color: #ffffff;
+}
+
+.course-hero-btn:hover{
+    background-color: white;
+    color: #303153;
+    border: 2px solid #303153;
+}
+
+.arrow i {
+    display: inline-block;
+    transform: rotate(-90deg);
+    font-size: 20px;
+    transition: transform 0.5s ease;
+}
+
+.course-hero-btn:hover .arrow i {
+    transform: rotate(-90deg) translateY(8px);
+}
+/* ===============================
+   RESPONSIVE
+=================================*/
+
+@media (max-width: 1200px){
+    .courses-card-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .courses-card-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .courses-main-title{
+        font-size: 2rem;
+    }
+}

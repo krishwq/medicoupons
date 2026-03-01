@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medical Coupons</title>
+    <script src="https://kit.fontawesome.com/4066c38b65.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_by_css/index.css">
+    <link rel="stylesheet" href="style_by_css/home.css">
+    <link rel="stylesheet" href="style_by_css/course.css">
+    <link rel="stylesheet" href="style_by_css/about.css">
+    <link rel="stylesheet" href="style_by_css/footer.css">
+  </head>
+<body>
+<!-- Navbar Component -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+
+    <!-- Brand (Left) -->
+    <a class="navbar-brand logo-brand" href="/">
+    <span class="logo-medi">Medi</span><span class="logo-coupons">Coupons</span>
+</a>
+
+    <!-- Hamburger (Right in mobile) -->
+    <button class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Normal Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button"
+             data-bs-toggle="dropdown">
+            Courses
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Cerebellum Plans</a></li>
+            <li><a class="dropdown-item" href="#">PrepLadder Plans</a></li>
+            <li><a class="dropdown-item" href="#">PW Nursing Plans</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-section">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="externals/Conatcts.html">Contact</a>
+        </li>
+        
+
+      </ul>
+    </div>
+
+    <!-- Mobile Slide Menu (Right Side) -->
+    <div class="offcanvas offcanvas-end d-lg-none"
+         tabindex="-1"
+         id="offcanvasNavbar">
+
+      <div class="offcanvas-header">
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#"
+               role="button"
+               data-bs-toggle="dropdown">
+              Courses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cerebellum Plans</a></li>
+            <li><a class="dropdown-item" href="#">PrepLadder Plans</a></li>
+            <li><a class="dropdown-item" href="#">PW Plans</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#about-section">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="externals/Conatcts.html">Contact</a>
+        </li>
+        
+
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+<!-- Home component -->
+<section class="home-hero-section">
+  <div class="home-hero-container">
+
+    <!-- Left Content -->
+    <div class="home-hero-content">
+      <h1 class="home-hero-title">Save More on Medical Courses</h1>
+      <p class="home-hero-text">
+        Get exclusive discounts on Cerebellum, PrepLadder, PW and more.
+        We help medical students save thousands with verified coupon deals.
+      </p>
+      <a href="#courses-section" class="home-hero-btn">
+  <span>Explore Plans</span>
+  <span class="arrow"><i class="fa-solid fa-arrow-down"></i></span>
+</a>
+    
+    </div>
+
+    <!-- Right Image / Box -->
+    <div class="home-hero-image">
+  <div class="home-image-card">
+    <img src="images/cover.png" alt="Medical Course Cover" class="home-hero-img">
+  </div>
+</div>
+
+  </div>
+</section>
+<!--COURSES SECTION-->
+<section id="courses-section" class="courses-wrapper">
+  <div class="courses-container">
+
+    <h2 class="courses-main-title">Our Popular Courses</h2>
+
+    <div class="courses-card-grid">
+
+      <!-- Card 1 -->
+      <div class="course-card">
+        <div class="course-logo-wrapper">
+          <img src="images/cerebellum.jpg" alt="Cerebellum" class="course-logo">
+        </div>
+        <h3 class="course-title">Cerebellum Plans</h3>
+        <p class="course-subtitle">
+          Premium NEET PG preparation with structured video lectures.
+        </p><br>
+        <a href="#courses-section" class="course-hero-btn">
+  <span>View Offers</span>
+  <span class="arrow"><i class="fa-solid fa-arrow-down"></i></span>
+</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="course-card">
+        <div class="course-logo-wrapper">
+          <img src="images/prep.jpg" alt="PrepLadder" class="course-logo">
+        </div>
+        <h3 class="course-title">PrepLadder Plans</h3>
+        <p class="course-subtitle">
+          High-yield concepts and QBank for medical entrance success.
+        </p><br>
+        <a href="#courses-section" class="course-hero-btn blue">
+  <span>View Offers</span>
+  <span class="arrow"><i class="fa-solid fa-arrow-down"></i></span>
+</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="course-card">
+        <div class="course-logo-wrapper">
+          <img src="images/pw.jpg" alt="PW Nursing" class="course-logo">
+        </div>
+        <h3 class="course-title">PW Nursing</h3>
+        <p class="course-subtitle">
+          Affordable and comprehensive nursing exam preparation.
+        </p><br>
+        <a href="#courses-section" class="course-hero-btn">
+  <span>View Offers</span>
+  <span class="arrow"><i class="fa-solid fa-arrow-down"></i></span>
+</a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="course-card">
+        <div class="course-logo-wrapper">
+          <img src="images/MedPlus-Logo.png" alt="MedPlus" class="course-logo">
+        </div>
+        <h3 class="course-title">MedPlus Courses</h3>
+        <p class="course-subtitle">
+          Advanced medical subject mastery with expert guidance.
+        </p><br>
+        <a href="#courses-section" class="course-hero-btn blue">
+  <span>View Offers</span>
+  <span class="arrow"><i class="fa-solid fa-arrow-down"></i></span>
+</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- About section -->
+<section id="about-section">
+  <div class="about-container">
+
+    <!-- Left Image -->
+    <div class="about-image-wrapper">
+      <img src="images/about.jpg" alt="About MediCoupons" class="about-image">
+    </div>
+
+    <!-- Right Content -->
+    <div class="about-content">
+      <h2 class="about-title">About MediCoupons</h2>
+      <p class="about-text">
+        MediCoupons helps medical students access premium course subscriptions
+        at discounted prices. We partner with trusted platforms to provide
+        verified coupons and exclusive offers.
+      </p>
+      <p class="about-text">
+        Our mission is simple — make medical education more affordable,
+        accessible, and stress-free for aspiring doctors across India.
+      </p>
+
+      <div class="about-stats">
+        <div class="about-stat-card">
+          <h3>5K+</h3>
+          <span>Students Helped</span>
+        </div>
+        <div class="about-stat-card">
+          <h3>10+</h3>
+          <span>Course Partners</span>
+        </div>
+        <div class="about-stat-card">
+          <h3>100%</h3>
+          <span>Verified Deals</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- FOOTER-->
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+            <h3>
+                <span class="logo-medi-footer">Medi</span>
+                <span class="logo-coupons">Coupons</span>
+            </h3>
+            <p>Your trusted partner for medical savings and healthcare discount plans.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="#courses-section">Plans</a>
+            <a href="#about-section">About Us</a>
+            <a href="/externals/Conatcts.html">Contact</a>
+        </div>
+
+        <!-- Contact Links -->
+        <div class="footer-contact">
+            <h4>Connect With Us</h4>
+
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a href="https://t.me/yourusername" target="_blank">
+                <i class="fa-brands fa-telegram"></i> Telegram
+            </a>
+
+            <a href="mailto:info@medicoupons.in">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        © 2026 MediCoupons. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="function_by_js/app.js"></script>
+</body>
+</html>

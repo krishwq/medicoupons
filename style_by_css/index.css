@@ -1,0 +1,102 @@
+/* ===============================
+   GLOBAL
+=================================*/
+body{
+    padding: 0;
+    margin: 0;
+   background: repeating-linear-gradient(
+  155deg,
+  #dff5f7,
+  #fff5f9 500px,
+  #dff5f7 1000px
+);
+    color: #303153;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* ===============================
+   NAVBAR
+=================================*/
+.navbar{
+    background: white;
+    --bs-navbar-color: #303153c7;
+    --bs-navbar-hover-color: #000000;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.06);
+}
+
+.nav-item{
+    font-size: 17px;
+    font-weight: 500;
+    color: #303153;
+}
+
+.navbar-brand{
+    color: #303153 !important;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler-icon{
+    filter: invert(0);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* ===============================
+   OFFCANVAS
+=================================*/
+.offcanvas{
+    background: linear-gradient(135deg, #dff5f7, #fff5f9) !important;
+}
+
+.offcanvas a{
+    color: #303153 !important;
+}
+
+.offcanvas a:hover{
+    color: black !important;
+}
+
+/* ===============================
+   DROPDOWN
+=================================*/
+.dropdown-menu{
+    background: #fff5f9 !important;
+    border: none;
+}
+
+.dropdown-menu .dropdown-item{
+    color: #303153 !important;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: #dff5f7;
+    color: #000;
+}
+
+/* ===============================
+   LOGO DESIGN
+=================================*/
+.logo-brand{
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-medi{
+    color: #303153;
+}
+
+.logo-coupons{
+    color: #ff4da6;
+    margin-left: 4px;
+}

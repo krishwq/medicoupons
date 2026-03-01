@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="messageicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | MediCoupons</title>
+
+    <script src="https://kit.fontawesome.com/4066c38b65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style_by_css/contact.css">
+</head>
+<body>
+
+    <!-- =======================
+         TOP BAR
+    ======================== -->
+    <div class="contact-top-bar">
+
+        <!-- Logo -->
+        <a class="navbar-brand logo-brand" href="/">
+            <span class="logo-medi">Medi</span>
+            <span class="logo-coupons">Coupons</span>
+        </a>
+
+        <!-- Back Link -->
+        <a href="/" class="back-home-link">
+            <i class="fa-solid fa-arrow-left"></i> Back to Home
+        </a>
+
+    </div>
+
+
+    <!-- =======================
+         CONTACT SECTION
+    ======================== -->
+
+    <section id="contact-section">
+        
+        <div class="contact-wrapper">
+
+            <!-- LEFT SIDE -->
+            <div class="contact-left">
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-subtitle">
+                    Have questions about course discounts?  
+                    We’re here to help you.
+                </p>
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+                    <input type="hidden" name="access_key" value="30439244-c6a5-49ff-8b84-711b48dc67f2">
+
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+
+                    <div class="form-footer">
+                        <button type="submit" class="contact-btn">
+                        Submit
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button type="reset" class="contact-btn">
+                        Clear
+                    </button>
+                    </div>
+                    
+
+                </form>
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="contact-right">
+                <div class="contact-info-card">
+                    <h3>MediCoupons</h3>
+                    <p>Helping medical students save more on premium courses.</p>
+                    <p><i class="fa-solid fa-envelope"></i> support@medicoupons.in</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
