@@ -1,0 +1,83 @@
+/* ===============================
+   NOTICE SECTION
+=================================*/
+.notice-section{
+    padding: 80px 20px;
+    background: transparent;
+}
+
+.notice-container{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.notice-title{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #303153;
+}
+
+/* Notice Box */
+.notice-box{
+    height: 200px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    position: relative;
+}
+
+/* Moving Content */
+.notice-content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 20px;
+    animation: scrollUp 15s linear infinite;
+}
+
+/* Pause on hover */
+.notice-box:hover .notice-content{
+    animation-play-state: paused;
+}
+
+/* Notice Text */
+.notice-content p{
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Links */
+.notice-content a{
+    text-decoration: none;
+    color: #ff4da6;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.notice-content a:hover{
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes scrollUp{
+    0%{
+        transform: translateY(40%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px){
+
+    .notice-box{
+        height: 180px;
+    }
+
+    .notice-title{
+        font-size: 1.6rem;
+    }
+}

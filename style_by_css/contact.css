@@ -203,3 +203,186 @@ body {
         gap: 10px;
     }
 }
+
+
+
+.contact-details p{
+    margin: 10px 0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-details a{
+    text-decoration: none;
+    color: #303153;
+    transition: 0.3s ease;
+}
+
+.contact-details a:hover{
+    color: #ff4da6;
+}
+
+.contact-details i{
+    font-size: 1rem;
+    color: #ff69b4;
+}
+
+/* ===============================
+   COMMUNITY SECTION
+=================================*/
+.community-section{
+    padding: 80px 20px;
+    background: transparent;
+}
+
+.community-container{
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.community-card{
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+.community-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+}
+
+/* Icons */
+.community-card i{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Specific Colors */
+.whatsapp-card i{
+    color: #25D366;
+}
+
+.telegram-card i{
+    color: #0088cc;
+}
+
+/* Heading */
+.community-card h3{
+    margin-bottom: 12px;
+    color: #303153;
+}
+
+/* Text */
+.community-card p{
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.community-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.btn-w{
+    background-color: #25D366;
+}
+.btn-t{
+    background-color: #0088cc;
+}
+.community-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #dff5f7, #fff5f9);
+    color: #303153;
+}
+
+/* Mobile spacing */
+@media (max-width: 600px){
+    .community-card{
+        padding: 30px 20px;
+    }
+
+    .community-card i{
+        font-size: 2.5rem;
+    }
+}
+
+/* ===============================
+   CONTACT FOOTER
+=================================*/
+.contact-footer{
+    background: #303153;
+    color: #ffffff;
+    padding: 20px 40px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* Heading */
+.footer-heading{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+/* Links */
+.footer-links{
+    width: 40vw;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.footer-links a{
+    color: #ffffff;
+    font-size: 2rem;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover{
+    color: #ff8fc7;
+    transform: translateY(-3px);
+}
+
+/* Copyright */
+.footer-copy{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* ===============================
+   RESPONSIVE
+=================================*/
+@media (max-width: 768px){
+
+    .contact-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 90vw;
+    }
+}
