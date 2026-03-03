@@ -20,3 +20,15 @@ faqItems.forEach(item => {
         item.classList.toggle("active");
     });
 });
+
+// alart section
+function copyCode() {
+    navigator.clipboard.writeText("P650");
+
+    const alertBox = document.getElementById("customAlert");
+    alertBox.classList.add("show");
+
+    setTimeout(() => {
+        alertBox.classList.remove("show");
+    }, 2500);
+}
