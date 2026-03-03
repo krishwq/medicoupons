@@ -22,8 +22,18 @@ faqItems.forEach(item => {
 });
 
 // alart section
-function copyCode() {
-    navigator.clipboard.writeText("P650");
+function copyCode1() {
+    navigator.clipboard.writeText("SPO2");
+
+    const alertBox = document.getElementById("customAlert");
+    alertBox.classList.add("show");
+
+    setTimeout(() => {
+        alertBox.classList.remove("show");
+    }, 2500);
+}
+function copyCode2() {
+    navigator.clipboard.writeText("DRD84N5N");
 
     const alertBox = document.getElementById("customAlert");
     alertBox.classList.add("show");

@@ -9,12 +9,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: repeating-linear-gradient(
-  155deg,
-  #dff5f7,
-  #fff5f9 500px,
-  #dff5f7 1000px
-);
+     background: linear-gradient(135deg, #faf5de, #eaddff, #ffd6e8);
     color: #303153;
 }
 

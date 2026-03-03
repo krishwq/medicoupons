@@ -1,12 +1,7 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: repeating-linear-gradient(
-  155deg,
-  #dff5f7,
-  #fff5f9 500px,
-  #dff5f7 1000px
-);
-    color: #303153;
+   background: linear-gradient(135deg, #93f5e6, #fae0b9);
+    color: #0f172a;;
 }
 /* ===============================
    CUSTOM ALERT
@@ -15,7 +10,7 @@ body {
     position: fixed;
     top: 30px;
     right: 30px;
-    background: #303153;
+    background: #0f172a;;
     color: white;
     padding: 14px 22px;
     border-radius: 30px;
@@ -32,7 +27,7 @@ body {
 }
 
 .custom-alert i{
-    color: #4ade80;
+    color: #22c55e;
 }
 
 /* Active State */
@@ -61,11 +56,11 @@ body {
 }
 
 .logo-medi{
-    color: #303153;
+    color: #0f172a;;
 }
 
 .logo-coupons{
-    color: #ff8fc7;
+    color: #f97316;
     margin-left: 4px;
 }
 
@@ -78,7 +73,7 @@ body {
 .back-home-link{
     text-decoration: none;
     font-size: 0.95rem;
-    color: #303153;
+    color: #0f172a;;
     font-weight: 500;
     transition: 0.3s ease;
 }
@@ -87,14 +82,6 @@ body {
     color: #000;
 }
 
-/* ===============================
-   GLOBAL
-=================================*/
-body{
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #dff5f7, #fff5f9);
-}
 
 /* ===============================
    HERO
@@ -102,6 +89,7 @@ body{
 .hero{
     padding: 10px 20px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .hero-container{
@@ -110,19 +98,19 @@ body{
 }
 
 .hero h1{
-    color: #303153;
+    color: #0f172a;
     margin-bottom: 20px;
 }
 
 .hero p{
-    color: #555;
+    color: #334155;
     margin-bottom: 30px;
 }
 
 .primary-btn{
     padding: 10px 25px;
     border-radius: 30px;
-    background: #303153;
+    background: #0f766e;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -130,7 +118,7 @@ body{
 }
 
 .primary-btn:hover{
-    background: #ff8fc7;
+    background: #f97316;
 }
 
 
@@ -140,7 +128,7 @@ body{
    COUPON CARD
 =================================*/
 .coupon-section{
-    padding: 60px 20px 10px;
+    padding: 10px 20px 10px;
 }
 
 .coupon-card{
@@ -159,11 +147,11 @@ body{
 }
 
 .coupon-header h3{
-    color: #303153;
+    color: #0f172a;;
 }
 
 .copy-btn{
-    background: #303153;
+   background: #0f766e;
     color: white;
     border: none;
     padding: 6px 15px;
@@ -175,7 +163,7 @@ body{
 }
 
 .copy-btn:hover{
-    background: #ff8fc7;
+    background: #f97316;
 }
 
 .discount-text{
@@ -198,12 +186,12 @@ body{
 }
 
 .visit-btn{
-    background: #303153;
+    background: #0f766e;
     color: white;
 }
 
 .plans-btn{
-    background: #ff8fc7;
+    background: #f97316;
     color: white;
 }
 
@@ -227,106 +215,6 @@ body{
 
 
 
-/* extra for test */
-/* Buttons */
-.modal-btn-wrapper{
-    display:flex;
-    gap:20px;
-    justify-content:center;
-    margin:50px 0;
-    flex-wrap:wrap;
-}
-
-.theme-btn{
-    padding:12px 25px;
-    border:none;
-    border-radius:30px;
-    background: linear-gradient(90deg,#00c6ff,#0072ff);
-    color:white;
-    font-weight:600;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.theme-btn:hover{
-    transform: translateY(-3px);
-    box-shadow:0 10px 20px rgba(0,114,255,0.4);
-}
-
-/* Modal Background */
-.custom-modal{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.6);
-    backdrop-filter: blur(8px);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    opacity:0;
-    visibility:hidden;
-    transition:0.4s ease;
-    z-index:999;
-    overflow:auto;
-}
-
-/* Show Modal */
-.custom-modal.active{
-    opacity:1;
-    visibility:visible;
-}
-
-/* Modal Content */
-.modal-content{
-    width:90vw;
-    max-width:900px;
-    height:90vh;
-    background: linear-gradient(135deg,#0f172a,#1e293b);
-    border-radius:20px;
-    padding:40px;
-    color:white;
-    position:relative;
-    text-align:center;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start; /* Start from top */
-    align-items:center;
-    gap:20px;
-
-    overflow-y:auto; /* Enables internal scrolling */
-
-    /* Floating animation */
-    transform: translateY(50px) scale(0.95);
-    opacity:0;
-    transition: all 0.5s ease;
-}
-
-/* Floating Animation Active */
-.custom-modal.active .modal-content{
-    transform: translateY(0) scale(1);
-    opacity:1;
-}
-
-/* Heading */
-.modal-content h2{
-    font-size:2rem;
-}
-
-/* Paragraph */
-.modal-content p{
-    max-width:800px;
-    opacity:0.85;
-    line-height:1.6;
-}
-
-/* Close Button */
-.close-btn{
-    position:absolute;
-    top:20px;
-    right:25px;
-    font-size:28px;
-    cursor:pointer;
-}
 
 /* Join Buttons */
 .join-btn{
@@ -372,13 +260,13 @@ body{
 =================================*/
 
 .extra-discount-section{
-    padding: 5px 20px 30px;
+    padding: 20px 20px 30px;
 }
 
 .extra-discount-card{
     max-width: 700px;
     margin: auto;
-    background: #303153;
+    background: #0f766e;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.08);
@@ -403,7 +291,7 @@ body{
 
 /* Small Badge */
 .extra-badge{
-    background: #ff8fc7;
+    background: #f97316;
     color: white;
     border: none;
     padding: 6px 15px;
@@ -446,7 +334,7 @@ body{
 
 /* Secondary Button */
 .channel-btn{
-    background: #ff8fc7;
+    background: #f97316;
     color: white;
 }
 
@@ -475,7 +363,7 @@ body{
 
 .plans-title{
     font-size: 2rem;
-    color: #303153;
+    color: #0f172a;;
     margin-bottom: 40px;
     font-weight: 700;
 }
@@ -502,12 +390,12 @@ body{
 .plan-card:hover{
     transform: translateY(-8px);
     box-shadow: 0 20px 60px rgba(0,0,0,0.12);
-    border: 1px solid #303153;
+    border: 1px solid #0f172a;;
 }
 
 /* Title */
 .plan-card h3{
-    color: #303153;
+    color: #0f172a;;
     margin-bottom: 15px;
 }
 
@@ -535,5 +423,138 @@ body{
 
     .plans-title{
         font-size: 1.5rem;
+    }
+}
+
+
+/* extra for test */
+
+/* Modal Background */
+.custom-modal{
+    position:fixed;
+    inset:0;
+    /* background:rgba(0,0,0,0.6); */
+    backdrop-filter: blur(8px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    visibility:hidden;
+    transition:0.4s ease;
+    z-index:999;
+    overflow:auto;
+}
+
+/* Show Modal */
+.custom-modal.active{
+    opacity:1;
+    visibility:visible;
+}
+
+/* Modal Content */
+.modal-content{
+    width:90vw;
+    max-width:900px;
+    height:90vh;
+    background: linear-gradient(135deg, #71f2df, #ffdaa2);
+    border-radius:20px;
+    padding:40px;
+    color:black;
+    position:relative;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start; /* Start from top */
+    align-items:center;
+    gap:20px;
+    overflow-y:auto; /* Enables internal scrolling */
+    /* Floating animation */
+    transform: translateY(50px) scale(0.95);
+    opacity:0;
+    transition: all 0.5s ease;
+}
+
+/* Floating Animation Active */
+.custom-modal.active .modal-content{
+    transform: translateY(0) scale(1);
+    opacity:1;
+}
+
+/* Heading */
+.modal-content h2{
+    font-size:2rem;
+}
+
+/* Paragraph */
+.modal-content p{
+    max-width:800px;
+    opacity:0.85;
+    line-height:1.6;
+}
+
+/* Close Button */
+.close-btn{
+    position:absolute;
+    top:10px;
+    right:20px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+
+/* ===============================
+   TABLE STYLING (MODAL THEME)
+=================================*/
+
+
+.custom-table{
+    width:100%;
+    border-collapse:collapse;
+    background:rgba(255,255,255,0.6);
+    backdrop-filter: blur(5px);
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom: 20px;
+}
+
+.custom-table thead{
+    background:rgba(0,0,0,0.08);
+}
+
+.custom-table th,
+.custom-table td{
+    padding:14px 18px;
+    text-align:center;
+}
+
+.custom-table th{
+    font-weight:600;
+    letter-spacing:0.5px;
+}
+
+.custom-table tbody tr{
+    transition:0.3s ease;
+}
+
+.text-go-through{
+    text-decoration: line-through;
+}
+
+.custom-table tbody tr:hover{
+    background:rgba(255,255,255,0.8);
+    transform:scale(1.01);
+}
+
+.custom-table tbody tr:not(:last-child){
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .custom-table th,
+    .custom-table td{
+        padding:10px;
+        font-size:14px;
     }
 }

@@ -24,8 +24,8 @@
 /* Grid Layout */
 .courses-card-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
 /* Card */
@@ -94,8 +94,16 @@
     transition: 0.3s ease;
     text-decoration: none;
 }
-.blue{
-    background-color: #1895b7;
+.prep{
+    background-color: #0f766e;
+    color: #ffffff;
+}
+.ceri{
+    background-color: #d7993d;
+    color: #ffffff;
+}
+.pw{
+    background-color: #5c55a3;
     color: #ffffff;
 }
 

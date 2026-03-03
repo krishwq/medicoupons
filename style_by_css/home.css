@@ -81,18 +81,19 @@
 }
 
 .home-image-card{
-    background: linear-gradient(145deg, #dff5f7, #fff5f9);
+    /* background: linear-gradient(145deg, #dff5f7, #fff5f9); */
+    background: transparent;
     padding:10px;
     border-radius: 20px;
     width: 100%;
-    max-width: 420px;
-    box-shadow: 0px 0px 30px rgba(171, 132, 146, 0.772);
+    max-width: 450px;
+    /* box-shadow: 0px 0px 30px rgba(171, 132, 146, 0.772); */
     transition: all 0.3s ease;
 }
 
 .home-image-card:hover{
     transform: translateY(-8px);
-    box-shadow: 0px 0px 60px rgba(255, 200, 220, 0.5);
+    /* box-shadow: 0px 0px 60px rgba(255, 200, 220, 0.5); */
 }
 
 .home-hero-img{
