@@ -326,6 +326,7 @@ body {
     text-decoration: none;
     font-size: 0.9rem;
     transition: 0.3s;
+    border: none;
 }
 
 /* Primary Button */
@@ -451,6 +452,7 @@ body {
     overflow:auto;
 }
 
+
 /* Show Modal */
 .custom-modal.active{
     opacity:1;
@@ -509,6 +511,8 @@ body {
 }
 
 
+
+
 /* ===============================
    TABLE STYLING (MODAL THEME)
 =================================*/
@@ -564,3 +568,78 @@ body {
         font-size:14px;
     }
 }
+
+.contact-section{
+    text-align:center;
+    color:black;
+    padding:20px;
+    width: 100%;
+}
+
+.contact-section h2{
+    margin-bottom:10px;
+    margin-top: 20px;
+    font-size:24px;
+}
+
+.contact-cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.contact-card{
+    background:rgba(255,255,255,0.6);
+    backdrop-filter:blur(6px);
+    padding:20px;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-info h3{
+    margin:0;
+    font-size:18px;
+}
+
+.contact-info p{
+    margin:5px 0 0;
+    font-weight:bold;
+}
+.call-modal{
+    position:fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    visibility:hidden;
+    transition:0.4s ease;
+    z-index:999;
+    overflow:auto;
+    max-width: 340px;
+    max-height: 300px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #71f2df, #ffdaa2);
+}
+
+.call-btn{
+    background:black;
+    color:white;
+    padding:10px 16px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+
+
