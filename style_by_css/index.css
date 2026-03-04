@@ -87,17 +87,24 @@ body{
     align-items: center;
 }
 
+.logo-text{
+    display: flex;
+    flex-direction: column;   /* This makes .com go to next line */
+    line-height: 1.1;
+}
+
 .logo-medi{
     color: #0055ff;
 }
 
 .logo-coupons{
     color: #ff1de1;
-    margin-left: 2px;
+    margin-left: 0;  /* remove side margin since it's below now */
 }
+
 .brand-logo{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin-right: 4px;
+    margin-right: 6px;
 }
