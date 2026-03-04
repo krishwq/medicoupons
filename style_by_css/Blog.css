@@ -1,0 +1,134 @@
+/* ===============================
+   GLOBAL
+=================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+     background: linear-gradient(135deg, #faf5de, #eaddff, #ffd6e8);
+    color: #303153;
+}
+
+/* ===============================
+   TOP BAR
+=================================*/
+.contact-top-bar {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;   /* Stack vertically */
+    align-items: flex-start;  /* Align left */
+    gap: 40px;
+}
+
+/* Logo */
+.logo-brand{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-medi{
+    color: #0055ff;
+}
+
+.logo-coupons{
+    color: #ff1de1;
+    margin-left: 2px;
+}
+
+.logo-brand:hover .logo-coupons{
+    color: #ff4da6;
+    transition: 0.3s ease;
+}
+
+/* Back Link */
+.back-home-link{
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #303153;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.back-home-link:hover{
+    color: #000;
+}
+.brand-logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+
+
+
+/* ===============================
+   CONTACT FOOTER
+=================================*/
+.contact-footer{
+    background: #303153;
+    color: #ffffff;
+    padding: 20px 40px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* Heading */
+.footer-heading{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+/* Links */
+.footer-links{
+    width: 40vw;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.footer-links a{
+    color: #ffffff;
+    font-size: 2rem;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover{
+    color: #ff8fc7;
+    transform: translateY(-3px);
+}
+
+/* Copyright */
+.footer-copy{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* ===============================
+   RESPONSIVE
+=================================*/
+@media (max-width: 768px){
+
+    .contact-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 90vw;
+    }
+}
