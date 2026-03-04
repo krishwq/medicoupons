@@ -1,15 +1,53 @@
 
-  // for navbar section
-  const offcanvasElement = document.getElementById('offcanvasNavbar');
-  const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+//   // for navbar section
+//   const offcanvasElement = document.getElementById('offcanvasNavbar');
+//   const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
 
-  document.querySelectorAll('#offcanvasNavbar .nav-link:not(.dropdown-toggle)')
-    .forEach(link => {
-      link.addEventListener('click', () => {
-        offcanvas.hide();   // ✅ Correct way to close
-      });
-    });
+//   document.querySelectorAll('#offcanvasNavbar .nav-link:not(.dropdown-toggle)')
+//     .forEach(link => {
+//       link.addEventListener('click', () => {
+//         offcanvas.hide();   // ✅ Correct way to close
+//       });
+//     });
+// document.querySelectorAll('.offcanvas .nav-link').forEach(link => {
+//   link.addEventListener('click', function () {
 
+//     const offcanvasElement = document.querySelector('.offcanvas.show');
+    
+//     if (offcanvasElement) {
+//       const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+//       offcanvas.hide();
+//     }
+
+//   });
+// });
+
+// for navbar section
+const offcanvasElement = document.getElementById('offcanvasNavbar');
+const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+
+document.querySelectorAll('#offcanvasNavbar .nav-link:not(.dropdown-toggle)')
+.forEach(link => {
+
+  link.addEventListener('click', function(e) {
+
+    const target = this.getAttribute("href");
+
+    if(target.startsWith("#")){
+      e.preventDefault(); // stop instant scroll
+
+      offcanvas.hide(); // close menu
+
+      setTimeout(() => {
+        document.querySelector(target).scrollIntoView({
+          behavior: "smooth"
+        });
+      }, 300); // wait for offcanvas to close
+    }
+
+  });
+
+});
 // for faq section 
 const faqItems = document.querySelectorAll(".faq-item");
 
