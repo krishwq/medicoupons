@@ -563,3 +563,44 @@ body {
         font-size:14px;
     }
 }
+/* benifit section */
+.benefit-section{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.benefit-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefit-list li{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: rgba(255,255,255,0.6);
+    padding: 14px 16px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 15px;
+}
+
+.benefit-list li .icon{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+    .benefit-section{
+        padding:18px;
+    }
+
+    .benefit-list li{
+        font-size:14px;
+        padding:12px;
+    }
+}
