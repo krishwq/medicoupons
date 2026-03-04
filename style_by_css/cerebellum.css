@@ -56,12 +56,17 @@ body {
 }
 
 .logo-medi{
-    color: #0f172a;;
+    color: #0f172a;
 }
-
+.brand-logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
 .logo-coupons{
     color: #f97316;
-    margin-left: 4px;
+    margin-left: 2px;
 }
 
 .logo-brand:hover .logo-coupons{

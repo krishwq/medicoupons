@@ -42,3 +42,13 @@ function copyCode2() {
         alertBox.classList.remove("show");
     }, 2500);
 }
+function copyCode3() {
+    navigator.clipboard.writeText("SAVE10");
+
+    const alertBox = document.getElementById("customAlert");
+    alertBox.classList.add("show");
+
+    setTimeout(() => {
+        alertBox.classList.remove("show");
+    }, 2500);
+}

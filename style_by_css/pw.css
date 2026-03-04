@@ -63,7 +63,7 @@ body {
 
 .logo-coupons{
     color: #4f46e5;
-    margin-left: 4px;
+    margin-left: 2px;
 }
 
 .logo-brand:hover .logo-coupons{
@@ -77,6 +77,12 @@ body {
     color: #1e1b4b;
     font-weight: 500;
     transition: 0.3s ease;
+}
+.brand-logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 4px;
 }
 
 .back-home-link:hover{
@@ -265,95 +271,167 @@ body {
 /* ===============================
    PLANS SECTION
 =================================*/
-.plans-section{
+/* Base Layout (Your provided CSS) */
+.plans-section {
     padding: 40px 20px;
     text-align: center;
+    font-family: Arial, sans-serif; /* Added a fallback font */
 }
 
-.plans-title{
+.plans-title {
     font-size: 2rem;
     margin-bottom: 40px;
     font-weight: 700;
 }
 
-.plans-container{
+.plans-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
     max-width: 1100px;
     margin: auto;
+    text-align: left; /* Aligns the inner content to the left */
 }
 
-.plan-card{
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(79,70,229,0.12);
-    transition: 0.3s ease;
+/* Benefits Section Styling */
+.benifit h3 {
+    font-size: 1.3rem;
+    color: #4a4a4a;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
 }
 
-.plan-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 20px 60px rgba(79,70,229,0.2);
+/* Recreating the faint underline under "Exclusive Benefits" */
+.benifit h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #fcf1d8; 
+    border-radius: 2px;
 }
 
-.plan-card h3{
-    margin-bottom: 15px;
+.benifit ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.plan-card p{
-    color: #444;
+.benifit li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 18px;
     font-size: 0.95rem;
-    margin-bottom: 20px;
+    color: #444;
+    line-height: 1.4;
 }
 
-/* ===============================
-   MODAL
-=================================*/
-.custom-modal{
-    position:fixed;
-    inset:0;
-    backdrop-filter: blur(8px);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    opacity:0;
-    visibility:hidden;
-    transition:0.4s ease;
-    z-index:999;
+.benifit li strong {
+    font-weight: 600;
+    color: #222;
 }
 
-.custom-modal.active{
-    opacity:1;
-    visibility:visible;
+/* Icon Styling */
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    background-color: #fceabb; /* Light yellow/orange background */
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 2px; /* aligns icon with the first line of text */
+    font-size: 12px;
 }
 
-.modal-content{
-    width:90vw;
-    max-width:900px;
-    height:90vh;
-    background: linear-gradient(115deg, #b4adff, white);
-    border-radius:20px;
-    padding:40px;
-    position:relative;
-    overflow-y:auto;
-    transform: translateY(50px) scale(0.95);
-    opacity:0;
-    transition: all 0.5s ease;
+/* Pricing Placeholder Styling */
+/* Pricing Container */
+.pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
 }
 
-.custom-modal.active .modal-content{
-    transform: translateY(0) scale(1);
-    opacity:1;
+/* Base Styling for both Pricing Cards */
+.pricing-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #f6f6f6; /* Light gray background for unselected */
+    border: 1px solid #dcdcdc; /* Subtle border */
+    transition: all 0.3s ease;
+    position: relative;
+}
+.pricing-card:hover{
+    background-color: #e5dfe7;
 }
 
-.close-btn{
-    position:absolute;
-    top:10px;
-    right:20px;
-    font-size:28px;
-    cursor:pointer;
+
+/* Inner Layout Elements */
+.card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
+
+.duration {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+
+/* Price Row Styling */
+.price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.final-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.original-price {
+    font-size: 1.1rem;
+    color: #888;
+    text-decoration: line-through;
+}
+
+
+
+.discount-badge {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2e7d32; /* Green text */
+}
+
+
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .plans-container {
+        grid-template-columns: 1fr; /* Stacks the columns on smaller screens */
+        gap: 40px;
+    }
+}
+
+
+
+
+
+
+
 
 /* ===============================
    TABLE STYLING

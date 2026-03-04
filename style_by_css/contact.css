@@ -34,12 +34,12 @@ body {
 }
 
 .logo-medi{
-    color: #303153;
+    color: #0055ff;
 }
 
 .logo-coupons{
-    color: #ff8fc7;
-    margin-left: 4px;
+    color: #ff1de1;
+    margin-left: 2px;
 }
 
 .logo-brand:hover .logo-coupons{
@@ -380,4 +380,11 @@ body {
     .footer-links{
         width: 90vw;
     }
+}
+
+.brand-logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 4px;
 }

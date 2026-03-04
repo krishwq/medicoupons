@@ -88,10 +88,16 @@ body{
 }
 
 .logo-medi{
-    color: #303153;
+    color: #0055ff;
 }
 
 .logo-coupons{
-    color: #ff4da6;
-    margin-left: 4px;
+    color: #ff1de1;
+    margin-left: 2px;
+}
+.brand-logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 4px;
 }
