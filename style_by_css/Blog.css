@@ -74,7 +74,8 @@ body {
 /* BLOG SECTION */
 
 .blog-section{
-padding:60px 8%;
+padding:20px 8%;
+margin-bottom: 20px;
 }
 
 /* ARTICLE */
@@ -355,4 +356,26 @@ color:#0055ff;
 .plan-blog-course-link{
     text-decoration: underline;
     color: #0055ff;
+}
+
+/* FMGE SHIFT LIST */
+
+.blog-list li{
+line-height:1.6;
+}
+
+/* better spacing for tables on mobile */
+
+@media(max-width:768px){
+
+.table-wrapper{
+margin-top:15px;
+}
+
+.blog-table th,
+.blog-table td{
+padding:10px;
+font-size:0.9rem;
+}
+
 }
