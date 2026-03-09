@@ -1,22 +1,92 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
-<loc>https://neetfmgeplans.com/</loc>
+  <loc>https://neetfmgeplans.com/</loc>
+  <lastmod>2026-03-09T06:42:54+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/Cerebellum.html</loc>
+  <lastmod>2026-03-09T06:42:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/prepladder.html</loc>
+  <lastmod>2026-03-09T06:42:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/pw.html</loc>
+  <lastmod>2026-03-09T06:42:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/Blogs.html</loc>
+  <lastmod>2026-03-09T06:42:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/pyq.html</loc>
+  <lastmod>2026-03-09T06:42:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/Conatcts.html</loc>
+  <lastmod>2026-03-09T06:42:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/index.html</loc>
+  <lastmod>2026-03-09T06:42:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/pyq_files/NEETPG-2025.pdf</loc>
+  <lastmod>2026-03-09T06:49:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/pyq_files/NEETPG-2024.pdf</loc>
+  <lastmod>2026-03-09T06:47:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/pyq_files/NEETPG-2023.pdf</loc>
+  <lastmod>2026-03-09T06:55:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/pyq_files/NEETPG-2022.pdf</loc>
+  <lastmod>2026-03-09T06:55:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/pyq_files/FMGE-2025.pdf</loc>
+  <lastmod>2026-03-09T06:52:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/pyq_files/FMGE-2024.pdf</loc>
+  <lastmod>2026-03-09T06:49:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/pyq_files/FMGE-2023.pdf</loc>
+  <lastmod>2026-03-09T06:43:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://neetfmgeplans.com/pyq_files/FMGE-2022.pdf</loc>
+  <lastmod>2026-03-09T06:43:57+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
-<url>
-<loc>https://neetfmgeplans.com/prepladder.html</loc>
-</url>
-
-<url>
-<loc>https://neetfmgeplans.com/pw.html</loc>
-</url>
-
-<url>
-<loc>https://neetfmgeplans.com/Cerebellum.html</loc>
-</url>
-<url>
-<loc>https://neetfmgeplans.com/Blogs.html</loc>
-</url>
 
 </urlset>
