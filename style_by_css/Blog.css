@@ -379,3 +379,43 @@ font-size:0.9rem;
 }
 
 }
+
+.more-content {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.more-content.active {
+    display: block;
+}
+
+.view-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0d6efd, #4f9cff);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.25);
+}
+
+/* Hover effect */
+.view-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(13, 110, 253, 0.35);
+}
+
+/* Click effect */
+.view-more-btn:active {
+    transform: scale(0.96);
+}
+
+/* Optional: icon spacing */
+.view-more-btn i {
+    margin-left: 6px;
+}
