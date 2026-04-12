@@ -142,3 +142,27 @@
         font-size: 2rem;
     }
 }
+
+.offer-banner {
+  width: fit-content;
+  margin: 0 auto 25px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #ff3b3b;
+  border-radius: 40px;
+  text-align: center;
+  animation: blinkFade 2s infinite;
+}
+.offer-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Smooth disappear & appear */
+@keyframes blinkFade {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}

@@ -56,9 +56,6 @@
     margin-left: 6px;
 }
 
-.notice-content a:hover{
-    text-decoration: underline;
-}
 
 /* Animation */
 @keyframes scrollUp{
@@ -80,4 +77,26 @@
     .notice-title{
         font-size: 1.6rem;
     }
+}
+
+.notice-blink {
+  width: fit-content;
+  margin: 10px auto 20px auto;
+  padding: 8px 18px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  animation: blinkNotice 2s infinite;
+}
+
+/* Pure appear-disappear */
+@keyframes blinkNotice {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
 }
