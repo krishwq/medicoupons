@@ -47,7 +47,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <a href="/#courses-section" class="nav-link"><i class="fa-solid fa-arrow-left"></i> Back to Home</a><br>
 
             <div class="hero-container">
@@ -74,9 +74,15 @@
                         <div class="coupon-badge">Active Promo Code</div>
                         <div class="coupon-code-box">
                             <span class="code" id="promoCode">SPO2</span>
-                            <button onclick="copyCode('SPO2')" class="btn-copy">
-                                <i class="fa-regular fa-copy"></i> Copy
+                            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    <input type="hidden" name="access_key" value="30439244-c6a5-49ff-8b84-711b48dc67f2">
+    <input type="hidden" name="subject" value="Cerebellum Copy Button Clicked">
+    <input type="hidden" name="message" value="User clicked the copy button of creebllum">
+    <input type="hidden" name="redirect" value="https://neetfmgeplans.com/Cerebellum.html#hero">
+                            <button onclick="copyCode('SPO2')" class="btn-copy" type="submit">
+                                <i class="fa-regular fa-copy" ></i> Copy
                             </button>
+                            </form>
                         </div>
                         <p class="discount-text">Apply verified Promo Code <strong>SPO2</strong> to get the Maximum Discount on all Cerebellum Academy courses.</p>
                         <a href="https://dashboard.cerebellumacademy.com/plans" target="_blank" class="btn btn-block btn-accent">Redeem on Cerebellum <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
