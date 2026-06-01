@@ -171,64 +171,227 @@ body {
     width: 95vw;
     margin: auto;
 }
-
-/* Other courses */
+/* Other course */
 .course-guide-section{
-    padding: 20px 20px;
+    padding:30px 20px;
     margin-bottom: 50px;
 }
 
 .course-guide-container{
     max-width:1200px;
     margin:auto;
+    text-align:center;
+}
+
+.offer-badge{
+    display:inline-block;
+    padding:8px 18px;
+    background:#e0f2fe;
+    color:#0369a1;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
 }
 
 .course-guide-title{
-    text-align:center;
-    font-size:2rem;
-    margin-bottom:10px;
+    font-size:2.2rem;
+    font-weight:700;
+    margin-bottom:15px;
+    color:#0f172a;
 }
 
 .course-guide-subtitle{
-    text-align:center;
-    color:#64748b;
     max-width:800px;
-    margin:0 auto 40px;
-    line-height:1.7;
+    margin:0 auto;
+    color:#64748b;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.offer-highlight{
+    display:inline-block;
+    margin-top:20px;
+    margin-bottom:40px;
+    padding:12px 20px;
+    background:#eff6ff;
+    border:1px solid #bfdbfe;
+    border-radius:10px;
+    color:#1d4ed8;
+    font-weight:600;
 }
 
 .course-guide-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
 .course-guide-card{
     background:#fff;
-    padding:25px;
-    border-radius:12px;
+    padding:30px 25px;
+    border-radius:18px;
     text-decoration:none;
     color:inherit;
-    box-shadow:0 4px 12px rgba(0,0,0,0.06);
-    transition:.3s;
+    border:1px solid #e5e7eb;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+    transition:all .3s ease;
 }
 
 .course-guide-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(37,99,235,.15);
+    border-color:#3b82f6;
+}
+
+.course-icon{
+    font-size:40px;
+    margin-bottom:15px;
 }
 
 .course-guide-card h3{
-    margin-bottom:10px;
+    font-size:1.3rem;
+    margin-bottom:12px;
+    color:#0f172a;
 }
 
 .course-guide-card p{
     color:#64748b;
-    margin-bottom:15px;
-    line-height:1.6;
+    line-height:1.7;
+    margin-bottom:18px;
 }
 
 .course-guide-card span{
     color:#2563eb;
+    font-weight:700;
+}
+
+/* Year wise pyq */
+
+.exam-library{
+    padding:30px 20px;
+}
+
+.exam-library-wrapper{
+    max-width:1000px;
+    margin:auto;
+}
+
+.exam-library-title{
+    text-align:center;
+    font-size:2.2rem;
+    margin-bottom:12px;
+    color:#0f172a;
+}
+
+.exam-library-subtitle{
+    text-align:center;
+    color:#64748b;
+    max-width:720px;
+    margin:0 auto 50px;
+    line-height:1.7;
+}
+
+.exam-stack{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.exam-box{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    border:1px solid #e2e8f0;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.exam-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.exam-header h3{
+    font-size:1.5rem;
+    margin:0;
+}
+
+.exam-badge{
+    background:#dbeafe;
+    color:#1d4ed8;
+    padding:6px 12px;
+    border-radius:30px;
+    font-size:13px;
     font-weight:600;
+}
+
+.resource-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    border-top:1px solid #edf2f7;
+}
+
+.resource-row:first-of-type{
+    border-top:none;
+}
+
+.resource-info h4{
+    margin:0 0 5px;
+    color:#0f172a;
+}
+
+.resource-info p{
+    margin:0;
+    color:#64748b;
+    font-size:14px;
+}
+
+.resource-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.resource-download,
+.resource-hardcopy{
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.resource-download{
+    background:#2563eb;
+    color:#fff;
+}
+
+.resource-download:hover{
+    background:#1d4ed8;
+}
+
+.resource-hardcopy{
+    background:#f59e0b;
+    color:#fff;
+}
+
+.resource-hardcopy:hover{
+    background:#d97706;
+}
+
+@media(max-width:768px){
+
+    .resource-row{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .resource-buttons{
+        width:100%;
+        flex-wrap:wrap;
+    }
 }
