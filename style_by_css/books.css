@@ -93,13 +93,25 @@ body {
 .year-section{
     margin-bottom:60px;
 }
-
-.year-title{
+.year-subtitle{
+    text-align: center;
+}
+.subject-section{
+    margin-bottom:60px;
+}
+.subject-title{
     font-size:30px;
     margin-bottom:30px;
     color:#1f2937;
     border-left:6px solid #2563eb;
     padding-left:15px;
+}
+
+.year-title{
+    font-size:30px;
+    margin-bottom:30px;
+    color:#1f2937;
+    text-align: center;
 }
 
 .book-grid{

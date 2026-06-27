@@ -73,4 +73,8 @@
     padding-top: 30px;
     font-size: 0.85rem;
     color: #d0cdcd;
+
+    a{
+        color: rgb(186, 186, 244);
+    }
 }
