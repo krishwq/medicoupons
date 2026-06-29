@@ -101,6 +101,8 @@
     height: auto;
     border-radius: 10px;
     display: block;
+    width: 528px;
+    height: 294px;
 }
 
 /* ===============================
@@ -118,5 +120,9 @@
 
     .home-hero-image{
         margin-top: 30px;
+    }
+    .home-hero-img{
+        width: 352px;
+        height: 196px;
     }
 }

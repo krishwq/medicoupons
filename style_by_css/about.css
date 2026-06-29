@@ -28,6 +28,8 @@
   border-radius: 20px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.557);
   transition: transform 0.3s ease;
+  width:558px;
+ height:747px;
 }
 
 .about-image:hover {
@@ -102,4 +104,10 @@
   .about-stats {
     justify-content: center;
   }
+
+  .about-image{
+    width: 372px;
+    height: 534px;
+  }
+
 }
