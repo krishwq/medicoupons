@@ -504,3 +504,101 @@ body {
     }
 
 }
+
+/* pop-up */
+.discount-popup-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:999999;
+    animation:fadeIn .3s ease;
+}
+
+.discount-popup{
+    width:min(90%,470px);
+    background:#fff;
+    border-radius:18px;
+    padding:35px 30px;
+    text-align:center;
+    position:relative;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+    animation:popup .35s ease;
+}
+
+.popup-close{
+    position:absolute;
+    right:15px;
+    top:12px;
+    width:35px;
+    height:35px;
+    border:none;
+    background:#f3f3f3;
+    border-radius:50%;
+    font-size:24px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.popup-close:hover{
+    background:#e53935;
+    color:#fff;
+}
+
+.popup-icon{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.discount-popup h2{
+    margin-bottom:15px;
+    color:#0b7a75;
+}
+
+.discount-popup p{
+    font-size:16px;
+    line-height:1.7;
+    color:#444;
+}
+
+.coupon-box{
+    margin:22px auto;
+    background:#0b7a75;
+    color:#fff;
+    padding:14px;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.coupon-box span{
+    background:#fff;
+    color:#e53935;
+    padding:5px 14px;
+    border-radius:8px;
+    margin-left:8px;
+    letter-spacing:2px;
+}
+
+.popup-note{
+    font-size:14px;
+    color:#666;
+}
+
+@keyframes popup{
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}

@@ -52,6 +52,33 @@ height="60">
         </a>
 
     </div>
+    <!-- Exclusive Discount Popup -->
+<div id="discountPopup" class="discount-popup-overlay">
+    <div class="discount-popup">
+        <button class="popup-close" id="closePopup">&times;</button>
+
+        <div class="popup-icon">🎉</div>
+
+        <h2>Exclusive Discount!</h2>
+
+        <p>
+            Get an <strong>Exclusive Discount</strong> on
+            <strong>PrepLadder</strong>,
+            <strong>Cerebellum</strong> and
+            <strong>PW MedEd</strong> batch purchases.
+        </p>
+
+        <div class="coupon-box">
+            Coupon Code:
+            <span>SPO2</span>
+        </div>
+
+        <p class="popup-note">
+            Apply this coupon while purchasing your course to unlock your special discount.
+        </p>
+    </div>
+</div>
+
 
     <!-- PYQ SECTION-->
 <section class="pyq-section">
@@ -489,6 +516,22 @@ Download NEET PG previous year question papers and FMGE previous year papers
 to improve exam preparation. Access medical entrance exam PYQs and free
 PDF downloads for NEET PG, FMGE and INICET aspirants.
     </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("discountPopup");
+    const closeBtn = document.getElementById("closePopup");
+
+    closeBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
+
+    popup.addEventListener("click", (e) => {
+        if (e.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});
+</script>
 
     <script type="application/ld+json">
 {
